@@ -1,0 +1,9 @@
+@mixin title($font-weight, $font-size, $line-height, $color) {
+  font: $font-weight #{$font-size}/#{$line-height} "Roboto", sans-serif;
+  font-style: normal;
+  color: $color;
+}
+
+.page-title {
+  @include title(600, 24px, 32px, #000000d9);
+}
